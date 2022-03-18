@@ -1,5 +1,5 @@
 # Weather-APP
-the technologies and architectures used are:
+The technologies and architectures used are:
 
 Architecture MVVM
 
