@@ -9,30 +9,29 @@
     tools:context=".Views.SplashScreenActivity">
 
     <TextView
-        android:id="@+id/buy_devices_textview"
+        android:id="@+id/weather_app_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginTop="30dp"
         android:textSize="30sp"
-        android:text="@string/shop_devices_title"
+        android:text="@string/weather_app_title"
         android:textStyle="bold"
-        android:textColor="@color/pink"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
     <ImageView
-        android:id="@+id/logo_devicesapp_imageView"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:id="@+id/logo_weatherapp_imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buy_devices_textview"
-        app:srcCompat="@drawable/sell_device"
+        app:layout_constraintTop_toBottomOf="@+id/weather_app_textview"
+        app:srcCompat="@drawable/weather_app"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -55,10 +54,10 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="80dp"
         android:progressBackgroundTint="@android:color/darker_gray"
-        android:progressTint="@color/black"
+        android:progressTint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_devicesapp_imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_weatherapp_imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

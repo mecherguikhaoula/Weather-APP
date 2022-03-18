@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.managedevices">
+    package="com.example.manageWeathers">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name=".Views.BaseApplication"
+        android:name="com.example.manageWeathers.Views.BaseApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_devices_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_devices_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.ManageDevices">
+        android:theme="@style/Theme.WeatherApplication">
         <activity
-            android:name=".Views.SplashScreenActivity"
+            android:name="com.example.manageWeathers.Views.SplashScreenActivity"
             android:exported="true"
             tools:node="merge">
             <intent-filter>
@@ -23,20 +23,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Views.DeviceInformationActivity"
-                  android:windowSoftInputMode="adjustPan"
+        <activity android:name="com.example.manageWeathers.Views.SearchWeatherOfTownActivity"
                   android:launchMode="singleTop"
                   android:exported="false"
                   tools:node="merge"/>
-        <activity android:name=".Views.ListDevicesShopActivity"
+        <activity android:name="com.example.manageWeathers.Views.MainMenuActivity"
                   android:launchMode="singleTop"
                   android:exported="false"
                   tools:node="merge"/>
-        <activity android:name=".Views.MainMenuActivity"
-                  android:launchMode="singleTop"
-                  android:exported="false"
-                  tools:node="merge"/>
-        <activity android:name=".Views.ListDevicesCartActivity"
+        <activity android:name="com.example.manageWeathers.Views.ListWeathersTownsActivity"
                   android:launchMode="singleTop"
                   android:exported="false"
                   tools:node="merge"/>
